@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — SoulScythe</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+<div id="ss-header"></div>
+<section class="section page-top">
+  <div class="section-bg"><video autoplay muted loop playsinline poster=""><source src="assets/shop.mp4" type="video/mp4"></video><div class="bg-overlay"></div></div>
+  <div class="container section-inner">
+    <div class="section-head"><span class="eyebrow">The Armory</span><h2 class="section-title">Shop All Relics</h2></div>
+    <div class="filters">
+      <div class="filter-cats" id="filter-cats"></div>
+      <div class="filter-tools">
+        <input class="input" id="search" type="search" placeholder="Search relics...">
+        <select class="input" id="sort">
+          <option value="">Sort: Featured</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+        </select>
+      </div>
+    </div>
+    <div class="product-grid" id="shop-grid"></div>
+  </div>
+</section>
+<div id="ss-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

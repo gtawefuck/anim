@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoulScythe — Enter the Realm</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<div id="ss-header"></div>
+
+<!-- ===== Hero video carousel ===== -->
+<section class="hero">
+  <div class="carousel">
+    <div class="slide">
+      <div class="section-bg"><video autoplay muted loop playsinline poster=""><source src="assets/hero-1.mp4" type="video/mp4"></video><div class="bg-overlay"></div></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">Premium Anime Gear</span>
+        <h1>UNLEASH YOUR <span class="accent">INNER BLADE</span></h1>
+        <p>Figures, apparel & relics forged for those who walk between worlds.</p>
+        <div class="hero-cta"><a href="shop.html" class="btn btn-primary">Shop Now</a><a href="shop.html?cat=Figures" class="btn btn-ghost">View Figures</a></div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="section-bg"><video autoplay muted loop playsinline poster=""><source src="assets/hero-2.mp4" type="video/mp4"></video><div class="bg-overlay"></div></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">Limited Drops</span>
+        <h1>WEAR THE <span class="accent">LEGEND</span></h1>
+        <p>Exclusive haoris, hoodies & tees. When they're gone, they're gone forever.</p>
+        <div class="hero-cta"><a href="shop.html?cat=Apparel" class="btn btn-blue">Shop Apparel</a></div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="section-bg"><video autoplay muted loop playsinline poster=""><source src="assets/hero-3.mp4" type="video/mp4"></video><div class="bg-overlay"></div></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">Collector Grade</span>
+        <h1>ENTER THE <span class="accent">REALM</span></h1>
+        <p>Museum-quality figures and replicas that command any shelf.</p>
+        <div class="hero-cta"><a href="shop.html" class="btn btn-primary">Explore Collection</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-dots"></div>
+  <div class="scroll-hint">SCROLL ↓</div>
+</section>
+
+<!-- ===== Featured ===== -->
+<section class="section">
+  <div class="section-bg"></div><div class="bg-overlay"></div>
+  <div class="container section-inner">
+    <div class="section-head"><span class="eyebrow">Hand-picked</span><h2 class="section-title">Featured Relics</h2><p class="section-sub">The most coveted gear in the SoulScythe armory.</p></div>
+    <div class="product-grid" id="featured"></div>
+    <div style="text-align:center;margin-top:2.5rem"><a href="shop.html" class="btn btn-ghost">View All Products</a></div>
+  </div>
+</section>
+
+<!-- ===== Reviews ===== -->
+<section class="section">
+  <div class="section-bg"><video autoplay muted loop playsinline poster=""><source src="assets/reviews.mp4" type="video/mp4"></video><div class="bg-overlay"></div></div>
+  <div class="container section-inner">
+    <div class="section-head"><span class="eyebrow">Hunter Approved</span><h2 class="section-title">What the Realm Says</h2></div>
+    <div class="reviews-grid" id="reviews"></div>
+  </div>
+</section>
+
+<!-- ===== Newsletter ===== -->
+<section class="section">
+  <div class="section-bg"></div><div class="bg-overlay"></div>
+  <div class="container section-inner newsletter">
+    <div class="section-head"><span class="eyebrow">Join the Order</span><h2 class="section-title">Unlock the Scrolls</h2><p class="section-sub">Get early access to drops, secret discounts & lore.</p></div>
+    <form class="newsletter-form"><input class="input" type="email" placeholder="your@email.com" required><button class="btn btn-primary">Subscribe</button></form>
+  </div>
+</section>
+
+<div id="ss-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

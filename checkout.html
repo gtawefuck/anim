@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — SoulScythe</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+<div id="ss-header"></div>
+<section class="section page-top">
+  <div class="section-bg"></div><div class="bg-overlay"></div>
+  <div class="container section-inner">
+    <div class="section-head"><span class="eyebrow">Final Step</span><h2 class="section-title">Checkout</h2></div>
+    <div id="checkout-root">
+      <div class="steps"><div class="step active">1 · Shipping</div><div class="step">2 · Payment</div><div class="step">3 · Done</div></div>
+      <div class="checkout-wrap">
+        <div>
+          <!-- Step 1: Shipping -->
+          <div class="checkout-panel" id="step-ship">
+            <h3 style="color:#fff;margin-bottom:1.2rem">Shipping Details</h3>
+            <form id="ship-form">
+              <div class="field"><label>Full Name</label><input id="c-name" required></div>
+              <div class="field"><label>Email</label><input id="c-email" type="email" required></div>
+              <div class="field"><label>Address</label><input required></div>
+              <div class="grid-2"><div class="field"><label>City</label><input required></div><div class="field"><label>ZIP</label><input required></div></div>
+              <button class="btn btn-primary btn-block">Continue to Payment</button>
+            </form>
+          </div>
+          <!-- Step 2: Payment -->
+          <div class="checkout-panel" id="step-pay" hidden>
+            <h3 style="color:#fff;margin-bottom:1.2rem">Payment Details</h3>
+            <form id="pay-form">
+              <div class="field"><label>Card Number</label><input placeholder="4242 4242 4242 4242" required></div>
+              <div class="grid-2"><div class="field"><label>Expiry</label><input placeholder="MM/YY" required></div><div class="field"><label>CVC</label><input placeholder="123" required></div></div>
+              <div class="field"><label>Name on Card</label><input required></div>
+              <button class="btn btn-primary btn-block">Place Order</button>
+              <button type="button" class="btn btn-ghost btn-block" id="back-to-ship" style="margin-top:.6rem">Back</button>
+            </form>
+          </div>
+          <!-- Step 3: Confirmation -->
+          <div class="checkout-panel" id="step-done" hidden>
+            <div class="confirm">
+              <div class="check">✔</div>
+              <h2 style="color:#fff">Order Confirmed!</h2>
+              <p style="color:var(--muted);margin:1rem 0">Your relics are being forged. Order <strong style="color:var(--blue-bright)" id="order-id"></strong></p>
+              <a href="shop.html" class="btn btn-primary">Continue Shopping</a>
+            </div>
+          </div>
+        </div>
+        <div class="summary" id="checkout-summary"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="ss-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
