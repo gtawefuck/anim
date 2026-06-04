@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — SoulScythe</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="register">
+<div id="ss-header"></div>
+<div class="section-bg"><video autoplay muted loop playsinline poster=""><source src="assets/auth.mp4" type="video/mp4"></video><div class="bg-overlay"></div></div>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1>Join the Order</h1>
+    <p class="sub">Create your SoulScythe account</p>
+    <div class="form-msg" id="form-msg"></div>
+    <form id="reg-form">
+      <div class="field"><label>Full Name</label><input id="r-name" required></div>
+      <div class="field"><label>Email</label><input id="r-email" type="email" required></div>
+      <div class="field"><label>Password</label><input id="r-pass" type="password" required></div>
+      <div class="field"><label>Confirm Password</label><input id="r-conf" type="password" required></div>
+      <button class="btn btn-primary btn-block">Create Account</button>
+    </form>
+    <p class="auth-alt">Already a hunter? <a href="login.html">Sign in</a></p>
+  </div>
+</div>
+<div id="ss-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
