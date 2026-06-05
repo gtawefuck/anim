@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verify — SoulScythe</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/enhance.css">
+</head>
+<body data-page="auth" data-auth="verify" class="has-video-bg">
+<div id="ss-header"></div>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1>Verify Your Email</h1>
+    <p class="sub">Enter the 5-digit code sent to <strong id="verify-email"></strong></p>
+    <div class="form-msg" id="form-msg"></div>
+    <div id="otp" class="otp-row">
+      <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Digit 1">
+      <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Digit 2">
+      <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Digit 3">
+      <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Digit 4">
+      <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Digit 5">
+    </div>
+    <p class="otp-hint">Code expires in <span class="otp-timer" id="countdown">30:00</span></p>
+    <button id="verify-btn" class="btn btn-primary btn-block">Verify &amp; Continue</button>
+    <p class="auth-alt">Didn't get it? <button class="link-btn" id="resend" type="button">Resend code</button></p>
+    <p class="auth-alt" style="font-size:.8rem;color:var(--muted)">Tip: you can also click the magic link in your email to sign up instantly.</p>
+  </div>
+</div>
+<div id="ss-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/video-bg.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

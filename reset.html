@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Set New Password — SoulScythe</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/enhance.css">
+</head>
+<body data-page="auth" data-auth="reset" class="has-video-bg">
+<div id="ss-header"></div>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1>Set New Password</h1>
+    <p class="sub">For <strong id="reset-email"></strong></p>
+    <div class="form-msg" id="form-msg"></div>
+    <form id="reset-form" novalidate>
+      <div id="otp-wrap">
+        <label style="display:block;text-align:center;color:var(--muted);font-size:.85rem;margin-bottom:.3rem">Enter the 5-digit code</label>
+        <div id="otp" class="otp-row">
+          <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Digit 1">
+          <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Digit 2">
+          <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Digit 3">
+          <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Digit 4">
+          <input class="otp-box" inputmode="numeric" maxlength="1" aria-label="Digit 5">
+        </div>
+      </div>
+      <div class="field"><label>New Password</label><input id="np" type="password" autocomplete="new-password" required></div>
+      <div class="field"><label>Confirm New Password</label><input id="np-conf" type="password" autocomplete="new-password" required></div>
+      <button type="submit" class="btn btn-primary btn-block">Update Password</button>
+    </form>
+    <p class="auth-alt"><a href="login.html">Back to login</a></p>
+  </div>
+</div>
+<div id="ss-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/video-bg.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
