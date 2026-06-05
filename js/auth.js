@@ -58,8 +58,7 @@
           e.preventDefault();
           var txt = (e.clipboardData || window.clipboardData).getData("text").replace(/\D/g, "").slice(0, boxes.length);
           txt.split("").forEach(function (ch, j) { if (boxes[j]) { boxes[j].value = ch; boxes[j].classList.add("filled"); } });
-          var nextEmpty = boxes[txt.length] || boxes[boxes.length - 1];
-          nextEmpty.focus();
+          (boxes[txt.length] || boxes[boxes.length - 1]).focus();
           if (onComplete && txt.length === boxes.length) onComplete(txt);
         });
       });
@@ -71,12 +70,13 @@
       var el = $("#countdown"); if (!el) return;
       var end = Date.now() + 30 * 60 * 1000;
       clearInterval(cdTimer);
-      (function tick() {
+      function tick() {
         var s = Math.max(0, Math.floor((end - Date.now()) / 1000));
         el.textContent = Math.floor(s / 60) + ":" + ("0" + (s % 60)).slice(-2);
         if (s <= 0) clearInterval(cdTimer);
-      })();
-      cdTimer = setInterval(arguments.callee ? function(){var s=Math.max(0,Math.floor((end-Date.now())/1000));el.textContent=Math.floor(s/60)+":"+("0"+(s%60)).slice(-2);if(s<=0)clearInterval(cdTimer);} : null, 1000);
+      }
+      tick();
+      cdTimer = setInterval(tick, 1000);
     }
 
     var routes = { register: initRegister, verify: initVerify, login: initLogin, forgot: initForgot, reset: initReset };
